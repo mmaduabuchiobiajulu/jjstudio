@@ -1,0 +1,389 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #080801;
+    padding: 3rem;
+    text-align: center;
+}
+
+header img {
+    max-height: 70px;
+    margin-left: 1rem;
+}
+
+header nav a {
+    text-decoration-line: underline;
+    color: aliceblue;
+    font-weight: bold;
+    font-size: larger;
+    padding-inline: 10px;
+}
+
+/* Main Section */
+.main-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.text-container {
+    width: 50%;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.text-container h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.intro {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.body-text {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+}
+
+.image-container {
+    width: 45%;
+    position: relative;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* What We Offer Section */
+.offer-section {
+    background-color: #ffffff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.section-heading {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+/* Offer Container */
+.offer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Offer Item */
+.offer-item {
+    background-color: #f9f9f9;
+    padding: 20px;
+    width: 18%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.offer-item:hover {
+    transform: translateY(-10px);
+}
+
+.icon img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+}
+
+.offer-item h3 {
+    font-size: 1.3rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.offer-item p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Carousel (Previous Works Section) */
+.previous-works {
+    background-color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Carousel Container */
+.carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* Carousel */
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+    min-width: 100%;
+    max-width: 100%;
+    transition: all 0.3s ease;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* Navigation Arrows */
+.prev-btn,
+.next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 2rem;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 50%;
+}
+
+.prev-btn {
+    left: 20px;
+}
+
+.next-btn {
+    right: 20px;
+}
+
+/* Hover effects for navigation buttons */
+.prev-btn:hover, .next-btn:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #080801;
+    color: aliceblue;
+    text-align: center;
+}
+
+footer p {
+    margin: 1rem;
+}
+
+footer a {
+    margin: 1rem;
+}
+
+#icons img {
+    max-height: 30px;
+    padding: 1rem;
+    padding-inline: 1px;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For larger screens (tablet, laptop, desktop) */
+@media (max-width: 1200px) {
+    header {
+        padding: 2rem;
+    }
+
+    .main-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text-container {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .image-container {
+        width: 80%;
+    }
+
+    .offer-item {
+        width: 48%;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+}
+
+/* For tablets and smaller screens */
+@media (max-width: 1024px) {
+    .offer-item {
+        width: 48%;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .carousel-slide {
+        min-width: 100%;
+    }
+
+    header nav a {
+        font-size: 1rem;
+        padding-inline: 8px;
+    }
+
+    .main-section {
+        padding: 15px;
+    }
+
+    .text-container h1 {
+        font-size: 1.7rem;
+    }
+
+    .text-container p, .body-text {
+        font-size: 0.9rem;
+    }
+}
+
+/* For smaller devices (mobile phones) */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 1.5rem;
+    }
+
+    header img {
+        max-height: 50px;
+    }
+
+    header nav a {
+        font-size: 1rem;
+        padding-inline: 5px;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .offer-item {
+        width: 100%;
+    }
+
+    .text-container {
+        width: 100%;
+    }
+
+    .main-section {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .image-container {
+        width: 100%;
+    }
+
+    .carousel-slide img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .prev-btn, .next-btn {
+        font-size: 1.5rem;
+        padding: 8px;
+    }
+
+    footer {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    footer p, footer a {
+        font-size: 0.9rem;
+    }
+
+    #icons img {
+        max-height: 30px;
+    }
+}
+
+/* For very small screens (e.g., older smartphones) */
+@media (max-width: 480px) {
+    header nav a {
+        font-size: 0.9rem;
+    }
+
+    .section-title {
+        font-size: 1.6rem;
+    }
+
+    .offer-item h3 {
+        font-size: 1rem;
+    }
+
+    .offer-item p {
+        font-size: 0.9rem;
+    }
+
+    .text-container h1 {
+        font-size: 1.3rem;
+    }
+
+    .text-container p, .body-text {
+        font-size: 0.8rem;
+    }
+}
