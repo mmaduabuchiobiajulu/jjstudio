@@ -285,7 +285,7 @@ body {
 /* About Us Section */
 .about-section {
     display: flex;
-    flex-direction: row;
+    flex-direction: row; /* Default side-by-side layout */
     justify-content: space-between;
     align-items: flex-start;
     padding: 50px;
@@ -301,7 +301,7 @@ body {
 
 .about-left,
 .about-right {
-    width: 48%;
+    width: 48%; /* Default side-by-side layout */
     padding: 20px;
 }
 
@@ -319,16 +319,49 @@ body {
     line-height: 1.8;
 }
 
-/* Responsive Design */
-@media screen and (max-width: 768px) {
+/* Responsive Design for iPhone 14 Pro Portrait and Landscape modes */
+@media screen and (max-width: 844px) {
     .about-section {
-        flex-direction: column;
-        padding: 20px;
+        flex-direction: column; /* Stack sections vertically */
+        padding: 20px;  /* Reduced padding for better layout */
     }
-    
-    .about-left, .about-right {
-        width: 100%;
-        margin-bottom: 20px;
+
+    .about-left,
+    .about-right {
+        width: 100%; /* Make both sections full-width when stacked */
+        margin-bottom: 20px; /* Add space between sections */
+    }
+
+    .about-left h2 {
+        font-size: 32px;  /* Adjust heading size for smaller screens */
+    }
+
+    .about-left p,
+    .about-right p {
+        font-size: 15px; /* Adjust font size */
+    }
+}
+
+/* For iPhone 14 Pro Portrait Mode (max-width: 390px) */
+@media screen and (max-width: 390px) {
+    .about-section {
+        flex-direction: column; /* Continue stacking vertically */
+        padding: 15px;  /* Further reduced padding */
+    }
+
+    .about-left,
+    .about-right {
+        width: 100%; /* Full-width content */
+        margin-bottom: 15px; /* Reduce margin to ensure content fits */
+    }
+
+    .about-left h2 {
+        font-size: 28px;  /* Smaller heading font size for smaller screens */
+    }
+
+    .about-left p,
+    .about-right p {
+        font-size: 14px; /* Adjust paragraph font size for small screens */
     }
 }
 
@@ -344,12 +377,13 @@ body {
     font-size: 16px;
     border-radius: 5px;
     cursor: pointer;
-    display: none;
+    display: none; /* Initially hidden */
 }
 
 #scrollButton:hover {
     background-color: #e64a19;
 }
+
 
 
 /* For tablets and smaller screens */
