@@ -30,3 +30,25 @@ prevButton.addEventListener('click', showPrevSlide);
 
 // Auto-slide every 3 seconds (3000ms)
 setInterval(showNextSlide, 3000);
+
+
+
+
+// Show the scroll to top button when user scrolls down
+window.onscroll = function() {
+    let scrollButton = document.getElementById("scrollButton");
+
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        scrollButton.style.display = "block"; // Show button
+    } else {
+        scrollButton.style.display = "none"; // Hide button
+    }
+};
+
+// Smooth scroll to the top when the button is clicked
+document.getElementById("scrollButton").addEventListener("click", function() {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+});

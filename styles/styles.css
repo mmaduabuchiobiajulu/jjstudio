@@ -267,6 +267,91 @@ footer a {
     }
 }
 
+/* Reset and general settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body Styles */
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* About Us Section */
+.about-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 50px;
+    background-color: #fff;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-left,
+.about-right {
+    width: 48%;
+    padding: 20px;
+}
+
+.about-left h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.about-left p,
+.about-right p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.8;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .about-section {
+        flex-direction: column;
+        padding: 20px;
+    }
+    
+    .about-left, .about-right {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Scroll to Top Button */
+#scrollButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ff5722;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+#scrollButton:hover {
+    background-color: #e64a19;
+}
+
+
 /* For tablets and smaller screens */
 @media (max-width: 1024px) {
     .offer-item {
