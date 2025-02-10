@@ -21,7 +21,7 @@ header {
 }
 
 header img {
-    max-height: 70px;
+    max-height: 50px;
     margin-left: 1rem;
 }
 
@@ -231,7 +231,7 @@ footer a {
 }
 
 #icons img {
-    max-height: 30px;
+    max-height: 70px;
     padding: 1rem;
     padding-inline: 1px;
 }
@@ -357,7 +357,7 @@ footer a {
     }
 
     #icons img {
-        max-height: 30px;
+        max-height: 70px;
     }
 }
 
