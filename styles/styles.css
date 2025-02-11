@@ -345,11 +345,11 @@ body {
 /* For iPhone 14 Pro Portrait Mode (max-width: 390px) */
 @media screen and (max-width: 390px) {
     .about-section {
-        flex-direction: column; /* Continue stacking vertically */
+        flex-direction: column-revers; /* Continue stacking vertically */
         padding: 15px;  /* Further reduced padding */
     }
 
-    .about-left,
+    .about-right,
     .about-right {
         width: 100%; /* Full-width content */
         margin-bottom: 15px; /* Reduce margin to ensure content fits */
